@@ -57,6 +57,7 @@
     }
     
     .btn{
+        /* letter-spacing: 2px; */
         font-family: sans-serif;
         font-size: 18px;
         font-weight: 700;
@@ -76,18 +77,19 @@
     }
 
     h3 {
-  font-size: 9vw;
+  font-size: 6vw;
   /* make our h1 tag larger */
   font-family: sans-serif;
   /* choosing our font */
-  background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(248, 4, 4, 0.5) 20%, rgba(253, 252, 252, 0) 61%), linear-gradient(rgb(250, 2, 2) 52%, rgb(241, 242, 243) 60%, #000408 61%);
-  /* you can change the colors based on your preference */
-  background-clip: text;
-  /*add this line, it defines how far the background should extend within an element, here we set it to text */
-  -webkit-background-clip: text;
-  /* add this line, for browsers compatibility */
-  -webkit-text-fill-color: transparent;
-  /* specifies the fill color of text characters. We use transparent to use the background value as our text fill */
+  /* background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgb(245, 229, 3) 20%, rgba(253, 252, 252, 0) 61%), linear-gradient(rgb(245, 229, 3) 52%, rgb(241, 242, 243) 60%, #047bf1 61%); */
+  color: lightseagreen;
+}
+
+.animate__animated.animate__zoomInUp {
+  --animate-duration: 2.5s;
+}
+.animate__animated.animate__zoomInRight,.animate__animated.animate__zoomInLeft{
+  --animate-duration: 3.5s;
 }
     </style>
     <link
@@ -96,7 +98,7 @@
   />
 </head>
 <body>
-      <div class="" style="min-height: 100vh;background-image: url('https://i.pinimg.com/564x/f3/c3/bf/f3c3bfba2c6a8aed34156cd74c5a12fa.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;"">
+    <div class="" style="min-height: 100vh;background-image: url('https://i.pinimg.com/564x/f3/c3/bf/f3c3bfba2c6a8aed34156cd74c5a12fa.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;"">
         <div class="text-center" style="">
             <svg viewBox="0 0 960 300" class="">
                 <symbol id="s-text">
@@ -117,17 +119,17 @@
         <div class="container text-center mt-4" >
             <form action="" class="bg- px-4 py-3">
                 <input id="input" type="text" class="form-control py-3 shadow-none fw-medium fs-6" placeholder="Enter Your Name...">
-                <audio id="myAudio" src="audio1.mp3" preload="auto" type="audio/mp3"></audio>
+                <audio id="myAudio" src="/audio1.mp3" preload="auto"></audio>
                 <button class="btn btn-sm btn-danger mt-3 w-50 py-2" onclick="show(event)">Click Here</button>
             </form>
             
         </div>
         <div class="container-fluid" id="name-div" style="display: none;">
-          <h2 id="" class=" fw-bold text-center animate__animated animate__lightSpeedInLeft animate__delay-2s animate__slower" style="color: goldenrod; letter-spacing: 1px;color: goldenrod;">HAPPY NEW YEAR</h2>
+          <h2 id="" class=" fw-bold text-center animate__animated animate__zoomInRight animate__delay-3s " style=" letter-spacing: 1px;color: goldenrod;">💖HAPPY NEW YEAR💖</h2>
 
-          <h3 id="name" class=" fw-bold text-center animate__animated animate__lightSpeedInLeft animate__delay-2s animate__slower" style=" letter-spacing: 1px;"></h3>
+          <h3 id="name" class=" fw-bold text-center animate__animated animate__zoomInLeft animate__delay-3s " style=" letter-spacing: 1px;"></h3>
       </div>
-        <div id="view" class="container animate__animated animate__fadeInUp animate__slow" style="min-height: 65vh;background-image: url('https://w0.peakpx.com/wallpaper/756/735/HD-wallpaper-happy-new-year-christmas-merry-christmas-moonlight-tower.jpg');background-position: center;
+        <div id="view" class="container animate__animated animate__zoomInUp animate__slower" style="min-height: 65vh;background-image: url('https://w0.peakpx.com/wallpaper/756/735/HD-wallpaper-happy-new-year-christmas-merry-christmas-moonlight-tower.jpg');background-position: center;
         background-repeat: no-repeat;background-size: cover;display: none;">
         </div>
     </div>
