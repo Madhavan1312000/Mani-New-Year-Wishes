@@ -14,28 +14,22 @@
   />
   <style>
     @media only screen and (max-width: 767px) {
-        #image{
+       .main1{
             position: absolute;
-            top: 550px;
-            width: 330px;
-            left: 85px;
-        }
-        a{
-            position: absolute;
-            top: 95%;
-            left: 100px;
+            top: 520px;
         }
 }
   </style>
 </head>
 <body>
- <div class="container-fluid img-fluid" style="min-height: 100vh; background-image: url('https://i.pinimg.com/originals/37/7d/89/377d898306494d3328ce5b7f60f5c778.jpg');background-position: center;background-size: cover;">
+<div class="container-fluid img-fluid" style="min-height: 100vh; background-image: url('https://i.pinimg.com/originals/37/7d/89/377d898306494d3328ce5b7f60f5c778.jpg');background-position: center;background-size: cover;
+    position: relative;">
         <div class="row">
-            <div class="col-md-12">
-                <img id="image" src="./img.png" class="img-fluid"alt="">
+            <div class="col-md-12 main1 d-flex justify-content-end">
+                <img id="image" src="./img.png" class="img-fluid" width="300" alt="">
             </div>
         </div>
-        <div class="container">
+        <div class="container-fluid text-center pt-5">
             <a href="innerpage.html" class="bg-info rounded py-2 px-5 text-white text-decoration-none fw-medium">CLICK HERE</a>
         </div>
     </div>
