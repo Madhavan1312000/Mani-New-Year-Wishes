@@ -81,7 +81,7 @@
   /* make our h1 tag larger */
   font-family: sans-serif;
   /* choosing our font */
-  background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(248, 4, 4, 0.5) 20%, rgba(253, 252, 252, 0) 61%), linear-gradient(rgb(250, 2, 2) 52%, rgb(241, 242, 243) 60%, rgb(246, 247, 248) 61%);
+  background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(248, 4, 4, 0.5) 20%, rgba(253, 252, 252, 0) 61%), linear-gradient(rgb(250, 2, 2) 52%, rgb(241, 242, 243) 60%, #000408 61%);
   /* you can change the colors based on your preference */
   background-clip: text;
   /*add this line, it defines how far the background should extend within an element, here we set it to text */
@@ -97,7 +97,7 @@
   />
 </head>
 <body>
-    <div class="" style="min-height: 106vh;background-image: url('https://i.pinimg.com/564x/f3/c3/bf/f3c3bfba2c6a8aed34156cd74c5a12fa.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;"">
+      <div class="" style="min-height: 100vh;background-image: url('https://i.pinimg.com/564x/f3/c3/bf/f3c3bfba2c6a8aed34156cd74c5a12fa.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;"">
         <div class="text-center" style="">
             <svg viewBox="0 0 960 300" class="">
                 <symbol id="s-text">
@@ -123,11 +123,13 @@
             </form>
             
         </div>
-        <div id="view" class="container animate__animated animate__zoomInUp animate__slow" style=" height: 65vh;background-image: url('https://w0.peakpx.com/wallpaper/756/735/HD-wallpaper-happy-new-year-christmas-merry-christmas-moonlight-tower.jpg');background-position: center;
-        background-repeat: no-repeat;background-size: cover;position: fixed;display: none;">
-        <div class="" style="margin-top: 500px;">
-            <h2 id="name" class=" fw-bold text-center animate__animated animate__lightSpeedInLeft animate__delay-2s animate__slower" style=" letter-spacing: 1px;"></h2>
-        </div>
+        <div class="container-fluid" id="name-div" style="display: none;">
+          <h2 id="" class=" fw-bold text-center animate__animated animate__lightSpeedInLeft animate__delay-2s animate__slower" style=" letter-spacing: 1px;color: goldenrod;">HAPPY NEW YEAR</h2>
+
+          <h3 id="name" class=" fw-bold text-center animate__animated animate__lightSpeedInLeft animate__delay-2s animate__slower" style=" letter-spacing: 1px;"></h3>
+      </div>
+        <div id="view" class="container animate__animated animate__fadeInUp animate__slow" style="min-height: 65vh;background-image: url('https://w0.peakpx.com/wallpaper/756/735/HD-wallpaper-happy-new-year-christmas-merry-christmas-moonlight-tower.jpg');background-position: center;
+        background-repeat: no-repeat;background-size: cover;display: none;">
         </div>
     </div>
 
@@ -135,6 +137,7 @@
         function show(event){
             event.preventDefault()
             document.getElementById('view').style.display='block'
+            document.getElementById('name-div').style.display='block'
             var name=document.getElementById('input').value.toUpperCase()
             document.getElementById('name').textContent=name
             
